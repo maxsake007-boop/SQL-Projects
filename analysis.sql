@@ -181,4 +181,5 @@ SELECT
     current_revenue - prev_revenue AS difference_revenue,
     ROUND((current_revenue - prev_revenue) / prev_revenue * 100) AS growth_pct
 FROM monthly_with_lag
-ORDER BY order_month;
+ORDER BY order_month; 
+

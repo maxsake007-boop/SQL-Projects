@@ -109,7 +109,7 @@ CREATE DATABASE retail_sales;
 
 ## 🔍 Бизнес-задачи и аналитические SQL-запросы
 
-Все запросы собраны в рабочем скрипте [analysis.sql](analysis.sql). Ниже представлен подробный разбор каждой задачи с реальными результатами выполнения.
+Все запросы собраны в рабочем скрипте [analysis.sql](analysis.sql). Ниже представлен подробный разбор каждой задачи с реальными результатами выполнения в виде таблиц, а оригинальные скриншоты выполнения каждого запроса в pgAdmin 4 сохранены в папке [images/](images/).
 
 ---
 
@@ -130,8 +130,6 @@ JOIN products p ON o.product_id = p.product_id;
 ```
 
 #### Результат выполнения:
-![Результат Запроса 1 в pgAdmin 4](images/01_financial_kpi.png)
-
 | total_sales | total_orders | total_customers | total_items_sold | avg_sales |
 |---|---|---|---|---|
 | 348 816.48 | 3 000 | 50 | 5 052 | 116.27 |
@@ -159,8 +157,6 @@ ORDER BY total_sales DESC;
 ```
 
 #### Результат выполнения:
-![Результат Запроса 2 в pgAdmin 4](images/02_category_analysis.png)
-
 | category | total_orders | total_items_sold | total_sales |
 |---|---|---|---|
 | Electronics | 614 | 801 | 139 281.99 |
@@ -189,8 +185,6 @@ ORDER BY total_sales DESC;
 ```
 
 #### Результат выполнения:
-![Результат Запроса 3 в pgAdmin 4](images/03_regional_sales.png)
-
 | total_sales | region | avg_sales |
 |---|---|---|
 | 98 822.88 | South | 137 |
@@ -222,8 +216,6 @@ ORDER BY c.customer_id;
 ```
 
 #### Результат выполнения (10 клиентов из 50):
-![Результат Запроса 4 в pgAdmin 4](images/04_inactive_customers.png)
-
 | customer_id | customer_name | region | signup_date |
 |---|---|---|---|
 | 1 | James Smith | North | 2021-01-10 |
@@ -271,8 +263,6 @@ LIMIT 5;
 ```
 
 #### Результат выполнения:
-![Результат Запроса 5 в pgAdmin 4](images/05_top5_vip_customers.png)
-
 | customer_name | region | orders_count | total_sales |
 |---|---|---|---|
 | Mark Lewis | West | 244 | 24 232.74 |
@@ -315,8 +305,6 @@ ORDER BY category, rank_in_category;
 ```
 
 #### Результат выполнения:
-![Результат Запроса 6 в pgAdmin 4](images/06_top2_products_per_category.png)
-
 | category | rank_in_category | product_name | total_sales |
 |---|---|---|---|
 | Clothing | 1 | Running Shoes | 18 298.17 |
@@ -357,8 +345,6 @@ ORDER BY order_month;
 ```
 
 #### Результат выполнения (фрагмент выборки из 24 месяцев):
-![Результат Запроса 7 в pgAdmin 4](images/07_cumulative_monthly_revenue.png)
-
 | order_month | total_sales | running_total_sales |
 |---|---|---|
 | 2023-01-01 | 12 978.88 | 12 978.88 |
@@ -405,8 +391,6 @@ ORDER BY order_month;
 ```
 
 #### Результат выполнения (фрагмент выборки):
-![Результат Запроса 8 в pgAdmin 4](images/08_monthly_revenue_growth_lag.png)
-
 | order_month | current_revenue | prev_revenue | difference_revenue | growth_pct |
 |---|---|---|---|---|
 | 2023-01-01 | 12 978.88 | *[null]* | *[null]* | *[null]* |
