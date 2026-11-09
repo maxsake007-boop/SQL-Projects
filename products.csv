@@ -1,0 +1,26 @@
+product_id,product_name,category,unit_price
+1,Laptop Pro 15,Electronics,1299.99
+2,Wireless Mouse,Electronics,29.99
+3,"Monitor 27""",Electronics,449.99
+4,Mechanical Keyboard,Electronics,89.99
+5,USB-C Hub,Electronics,49.99
+6,Winter Jacket,Clothing,149.99
+7,Running Shoes,Clothing,99.99
+8,Denim Jeans,Clothing,59.99
+9,Cotton T-Shirt,Clothing,24.99
+10,Wool Scarf,Clothing,34.99
+11,Olive Oil 1L,Food,14.99
+12,Ground Coffee 500g,Food,9.99
+13,Protein Bar Pack,Food,24.99
+14,Green Tea Box,Food,7.99
+15,Honey Jar 500g,Food,12.99
+16,Office Chair,Furniture,299.99
+17,Standing Desk,Furniture,549.99
+18,Bookshelf,Furniture,159.99
+19,Bedside Table,Furniture,89.99
+20,Sofa 3-Seat,Furniture,799.99
+21,Yoga Mat,Sports,29.99
+22,Dumbbell Set,Sports,69.99
+23,Jump Rope,Sports,14.99
+24,Resistance Band,Sports,19.99
+25,Water Bottle,Sports,24.99
